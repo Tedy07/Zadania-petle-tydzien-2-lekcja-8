@@ -12,9 +12,20 @@
             Console.WriteLine("Podaj drugą liczbę: ");
             int no2 = int.Parse(Console.ReadLine());
 
+            int i = no1;
 
-            for (int i = 0; i < 100; i++)
+            for ( i = 1; i < no2; i++)
             {
+                
+
+                if (i%no2 == 0 && no2<=i)
+                {
+
+                } else
+                {
+
+                }
+
 
 
 
