@@ -22,7 +22,7 @@
                 
                 counters++;
 
-                Console.WriteLine(i1);
+                Console.WriteLine($"{i1} and {counters}");
 
 
 
