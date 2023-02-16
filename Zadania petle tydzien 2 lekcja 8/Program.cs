@@ -4,27 +4,36 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ile jest liczb pierwszych w zakresie od 0 do 100.");
+          
+
+            Console.WriteLine("Liczby pierwsze w zakresie od 0 do 100.");
             Console.WriteLine("Podaj zakres liczb do sprawdzenia");
             
             Console.WriteLine("Podaj pierwszą liczbę: ");
-            int no1 = int.Parse(Console.ReadLine());
+            int i1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj drugą liczbę: ");
-            int no2 = int.Parse(Console.ReadLine());
+            int i2 = int.Parse(Console.ReadLine());
 
-            int i = no1;
+            int counters = 0;
+            //licznik
 
-            for ( i = 1; i < no2; i++)
+            for ( i1 = i1 ; i1 <= i2; i1++)
             {
                 
+                counters++;
 
-                if (i%no2 == 0 && no2<=i)
-                {
+                Console.WriteLine(i1);
 
-                } else
-                {
 
-                }
+
+
+                //if (i1 % i2 == 0)
+                //{
+
+                //} else
+                //{
+
+                //}
 
 
 
