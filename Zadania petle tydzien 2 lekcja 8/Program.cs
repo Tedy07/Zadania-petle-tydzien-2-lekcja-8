@@ -20,21 +20,19 @@
             for (int i = i1; i <= i2; i++)
             {
                 int liczba = i;
-                counters++;
-
-
+               
                 if (CzyPierwsza(liczba))
                 {
-                    Console.WriteLine("TAK");
-
+                    Console.WriteLine($"TAK {liczba} jest liczbą pierwszą");
+                    counters++;
+                    Console.WriteLine($"Licznik: {counters}");
                 }
                 else
                 {
-                    Console.WriteLine("NIE");
+                    Console.WriteLine($"{liczba} NIE jest liczbą pierwszą");
                 }
 
-
-                Console.WriteLine($"{i1} and {counters}");
+            
 
                 //if (i1 % i1 == 0 &&  )
                 //{
@@ -45,20 +43,22 @@
                 //}
             }
 
+
+            Console.WriteLine($"W podanym przedziale od {i1} do {i2} liczb pierwszych jest: {counters} ");
         }
 
         static bool CzyPierwsza(int n)  
         {
             if (n == 1)
             {
-                return true;
+                return false;
             }
 
 
             for (int i = 2; i < n; i++)
             {
-                if (n%i == 0)
-                {
+                if (n%i == 0) 
+                {  
                     return false;
                 }
 
