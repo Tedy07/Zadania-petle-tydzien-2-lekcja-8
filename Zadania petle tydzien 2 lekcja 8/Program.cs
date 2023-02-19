@@ -20,16 +20,15 @@
 
                 if (CzyPierwsza(liczba))
                 {
-                    Console.WriteLine($"TAK {liczba} jest liczbą pierwszą");
+                    Console.WriteLine($"* {liczba} jest liczbą pierwszą");
                     counters++;
-                    Console.WriteLine($"Licznik: {counters}");
                 }
                 else
                 {
                     Console.WriteLine($"{liczba} NIE jest liczbą pierwszą");
                 }
             }
-            Console.WriteLine($"W podanym przedziale od {i1} do {i2} liczb pierwszych jest: {counters} ");
+            Console.WriteLine($"W podanym przedziale od {i1} do {i2} liczb pierwszych jest: {counters}");
         }
         static bool CzyPierwsza(int n)
         {
