@@ -1,4 +1,6 @@
-﻿namespace Zadania_petle_tydzien_2_lekcja_8
+﻿using System.Threading.Channels;
+
+namespace Zadania_petle_tydzien_2_lekcja_8
 {
     internal class Program
     {
@@ -61,20 +63,34 @@
             Console.WriteLine("Podaj drugą liczbę: ");
             int b2 = int.Parse(Console.ReadLine());
 
-            do
+            //do
+            //{
+            //    Console.WriteLine("a2");
+            //    if (a2 % 2 == 0)
+            //    {
+            //        Console.WriteLine($"{a2} jest liczbą parzystą"); 
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{a2} Nie jest parzysta");
+            //    }
+
+            //}
+            //while (a2 <= b2);
+
+
+            while (a2 <= b2)
             {
-                Console.WriteLine("a2");
                 if (a2 % 2 == 0)
                 {
-                    Console.WriteLine($"{a2} jest liczbą parzystą"); 
+                    Console.WriteLine($"{a2} jest liczbą parzystą");
                 }
                 else
                 {
                     Console.WriteLine($"{a2} Nie jest parzysta");
                 }
 
-            }
-            while (a2 <= b2);
+            } do (a2++);
 
 
         }
