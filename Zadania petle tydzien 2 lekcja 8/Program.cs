@@ -54,8 +54,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    return true;
 
             // 2. Za pomocą pętli do…while znajdziesz wszystkie liczby parzyste z zakresu 0 – 1000
-
-            Console.WriteLine("Znajdowanie wszystkie liczby parzyste z zakresu 0 – 1000.");
+            Console.WriteLine("Znajdowanie wszystkich liczb parzystych w podanym zakresie.");
             Console.WriteLine("Podaj zakres liczb do sprawdzenia");
 
             Console.WriteLine("Podaj pierwszą liczbę: ");
@@ -81,9 +80,9 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine($"W podanym zakresie liczb parzystych jest: {counters2}.");
 
             //dodatkowo zadanie 2 w pętli for 
-
             Console.WriteLine("\nDodatkowe zadanie 2 w pętli for ");
-            Console.WriteLine("Znajdowanie wszystkie liczby parzyste z zakresu 0 – 1000.");
+            Console.WriteLine("Znajdowanie wszystkich liczb parzystych w podanym zakresie.\n");
+
             int counters2a = 0;
             int liczba2a = a2;
 
@@ -98,7 +97,6 @@ namespace Zadania_petle_tydzien_2_lekcja_8
                     Console.WriteLine($"{liczba2a++} jest liczbą nieparzystą");
                 }
             }
-
             Console.WriteLine($"W podanym zakresie liczb parzystych jest {counters2a}.");
         }
 
