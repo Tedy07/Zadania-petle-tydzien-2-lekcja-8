@@ -79,19 +79,35 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //while (a2 <= b2);
 
 
-            while (a2 <= b2)
+            //while (a2 <= b2)
+            //{
+            //    if (a2 % 2 == 0)
+            //    {
+            //        Console.WriteLine($"{a2} jest liczbą parzystą");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{a2} Nie jest parzysta");
+            //    }
+
+            //} do (a2++);
+            int counters2 = 0;
+
+            for (int i = a2; i < b2; i++)
             {
-                if (a2 % 2 == 0)
+                int liczba = i;
+               
+
+                if (liczba % 2 == 0)
                 {
-                    Console.WriteLine($"{a2} jest liczbą parzystą");
+                    counters2++;
+                    Console.WriteLine($"Liczba jest parzysta {liczba}, liczb parzystych jest {counters2}");
                 }
                 else
                 {
-                    Console.WriteLine($"{a2} Nie jest parzysta");
+                    Console.WriteLine($" {liczba} liczba jest nieparzysta");
                 }
-
-            } do (a2++);
-
+            }
 
         }
     }
