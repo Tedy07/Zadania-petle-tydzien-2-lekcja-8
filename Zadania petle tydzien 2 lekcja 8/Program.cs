@@ -102,6 +102,8 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
         // 3. Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
 
+        int
+
 
 
 
