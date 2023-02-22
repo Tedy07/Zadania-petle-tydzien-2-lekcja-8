@@ -63,52 +63,50 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine("Podaj drugą liczbę: ");
             int b2 = int.Parse(Console.ReadLine());
 
-            //do
-            //{
-            //    Console.WriteLine("a2");
-            //    if (a2 % 2 == 0)
-            //    {
-            //        Console.WriteLine($"{a2} jest liczbą parzystą"); 
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine($"{a2} Nie jest parzysta");
-            //    }
-
-            //}
-            //while (a2 <= b2);
-
-
-            //while (a2 <= b2)
-            //{
-            //    if (a2 % 2 == 0)
-            //    {
-            //        Console.WriteLine($"{a2} jest liczbą parzystą");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine($"{a2} Nie jest parzysta");
-            //    }
-
-            //} do (a2++);
             int counters2 = 0;
+            int liczba = a2;
 
-            for (int i = a2; i < b2; i++)
+            do
             {
-                int liczba = i;
-               
-
                 if (liczba % 2 == 0)
                 {
-                    counters2++;
-                    Console.WriteLine($"Liczba jest parzysta {liczba}, liczb parzystych jest {counters2}");
+                    Console.WriteLine($"{liczba++} jest liczbą parzystą, razem liczb parzystych jest {++counters2}");
                 }
                 else
                 {
-                    Console.WriteLine($" {liczba} liczba jest nieparzysta");
+                    Console.WriteLine($"{liczba++} jest liczbą nieparzystą");
+                }
+            } while (liczba <= b2);
+
+            Console.WriteLine($"W podanym zakresie liczb parzystych jest: {counters2}.");
+
+            //dodatkowo zadanie 2 w pętli for 
+
+            Console.WriteLine("\nDodatkowe zadanie 2 w pętli for ");
+            Console.WriteLine("Znajdowanie wszystkie liczby parzyste z zakresu 0 – 1000.");
+            int counters2a = 0;
+            int liczba2a = a2;
+
+            for (int i = liczba2a; i <= b2; i++)
+            {
+                if (liczba2a % 2 == 0)
+                {
+                    Console.WriteLine($"{liczba2a++} jest liczbą parzystą, razem liczb parzystych jest {++counters2a}");
+                }
+                else
+                {
+                    Console.WriteLine($"{liczba2a++} jest liczbą nieparzystą");
                 }
             }
 
+            Console.WriteLine($"W podanym zakresie liczb parzystych jest {counters2a}.");
         }
+
+        // 3. Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
+
+
+
+
+
     }
 }
