@@ -119,6 +119,55 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    Console.WriteLine($"{c}");
             //}
             //// 4. Program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej.
+            Console.WriteLine("Program, który po podaniu liczby całkowitej wyświetli piramidę liczb.");
+
+            Console.WriteLine("Podaj liczbę całkowitą.");
+            int a4 = int.Parse(Console.ReadLine());
+
+            // lewnetrzny loop odpowiada za wiersze 
+            //for (int i = 1; i < a4; i++)
+            //{
+            //     Console.WriteLine(i);
+
+            //    for (int j = 0; j < a4; j++)
+            //    { // liczba znakow w wierszu
+            //        Console.Write(j);
+            //    }
+
+
+
+
+            //}
+
+            // rys wierszy
+            for (int i = 0; i < a4; i++)
+            {
+
+                // rys znakow w wierszu
+                for (int j = 0; j < i+1; j++)
+                {
+                    //if (i  % 2 == 0)
+                    //{
+
+                    //    Console.Write('#');
+                    //} else
+                    //{
+                    //    Console.Write('%');
+                    //}
+
+                    Console.Write('*');
+
+                }
+
+                Console.WriteLine( );
+
+            }
+
+
+            // https://www.youtube.com/watch?v=06ZMRUn5xrU
+            // https://youtu.be/06ZMRUn5xrU
+            // Maszyna liczaca
+
 
 
         }
