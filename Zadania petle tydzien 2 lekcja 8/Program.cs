@@ -101,33 +101,26 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
 
             //// 3. Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
-            Console.WriteLine("\nWyświetlić ciąg Fibonacciego?");
-            Console.ReadKey();
+            //Console.WriteLine("\nWyświetlić ciąg Fibonacciego?");
+            //Console.ReadKey();
 
-            // 0, 1, 1, 2, 3, 5, 8, 13, 21 
+            //int a = 0;
+            //int b = 1;
+            //int c;
 
-            int a = 0;
-            int b = 1;
-            int c;
+            //Console.WriteLine($"\n{a}");
+            //Console.WriteLine(b);
 
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-
-            for (int i = a; i <= 42; i++)
-            {
-                c = a + b;
-
-                a = b;
-                b = c;
-
-                Console.WriteLine($"{c}");
-
-
-            }
-
+            //for (int i = a; i <= 42; i++)
+            //{
+            //    c = a + b;
+            //    a = b;
+            //    b = c;
+            //    Console.WriteLine($"{c}");
+            //}
+            //// 4. Program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej.
 
 
         }
-
     }
 }
