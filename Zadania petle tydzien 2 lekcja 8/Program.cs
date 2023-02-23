@@ -110,17 +110,19 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             int b = 1;
             int c;
 
-            for (int i = a; i < 6; i++)
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+            for (int i = a; i <= 42; i++)
             {
                 c = a + b;
 
-                 a = b;
+                a = b;
                 b = c;
 
-                Console.WriteLine($"{a} i {b} i {c}");
-                //Console.WriteLine($"{c}");
+                Console.WriteLine($"{c}");
 
-                
+
             }
 
 
