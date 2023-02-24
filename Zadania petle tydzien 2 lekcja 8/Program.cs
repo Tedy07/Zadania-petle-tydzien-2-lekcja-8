@@ -135,15 +135,17 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    Console.WriteLine();
             //}
 
-            // 5. Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
-            Console.WriteLine("Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.");
+            //// 5. Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
+            //Console.WriteLine("Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.");
 
-            for (int i = 1; i <= 20; i++)
-            {
-                double result = Math.Pow(i, 3);
-                Console.WriteLine($" Liczba {i} do potęgi 3 to {result}");
-            }
+            //for (int i = 1; i <= 20; i++)
+            //{
+            //    double result = Math.Pow(i, 3);
+            //    Console.WriteLine($" Liczba {i} do 3 to {result},");
+            //}
 
+            // 6. Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru:.
+            Console.WriteLine("Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru.");
 
 
 
