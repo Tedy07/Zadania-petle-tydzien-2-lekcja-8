@@ -121,8 +121,8 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //// 4. Program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej.
             //Console.WriteLine("Program, który po podaniu liczby całkowitej wyświetli piramidę liczb.");
 
-            Console.WriteLine("Podaj liczbę całkowitą.");
-            int a4 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Podaj liczbę całkowitą.");
+            //int a4 = int.Parse(Console.ReadLine());
 
             //// lewnetrzny loop odpowiada za wiersze 
             ////for (int i = 1; i < a4; i++)
@@ -165,27 +165,23 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
             //-------------------------
 
-            for (int i = 0; i < a4; i++)
+            for (int i = 0; i < 10; i++)
             {
-                if (i % 3 == 0)
+                for (int j = 0; j < i + 1; j++)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write('#');
-                } else if (i % 4 == 0) 
-                {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.Write('$');
+                    if ((i + j) % 2 == 0)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write(" # ");
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.White; 
+                        Console.Write($" {j} ");
+                    }
 
-                }else
-                {
-
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.Write( '%');
                 }
-                ;
-
-
-
+                Console.WriteLine();
 
             }
 
