@@ -121,22 +121,28 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //// 4. Program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej.
             //Console.WriteLine("Program, który po podaniu liczby całkowitej wyświetli piramidę liczb.");
 
-            Console.WriteLine("Podaj liczbę całkowitą.");
-            int a4 = int.Parse(Console.ReadLine());
-            int number4 = 0;    
+            //Console.WriteLine("Podaj liczbę całkowitą.");
+            //int a4 = int.Parse(Console.ReadLine());
+            //int number4 = 0;    
 
-            for (int i = 0; i < a4; i++)
+            //for (int i = 0; i < a4; i++)
+            //{
+            //    for (int j = 0; j < i + 1; j++)
+            //    {
+            //        Console.Write(++number4);
+            //        Console.Write(" ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            // 5. Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
+            Console.WriteLine("Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.");
+
+            for (int i = 1; i <= 20; i++)
             {
-                for (int j = 0; j < i + 1; j++)
-                {
-                    Console.Write(++number4);
-                    Console.Write(" ");
-                }
-                Console.WriteLine();
+                double result = Math.Pow(i, 3);
+                Console.WriteLine($" Liczba {i} do potęgi 3 to {result}");
             }
-
-
-
 
 
 
