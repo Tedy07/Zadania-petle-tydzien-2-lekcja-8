@@ -119,54 +119,84 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    Console.WriteLine($"{c}");
             //}
             //// 4. Program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej.
-            Console.WriteLine("Program, który po podaniu liczby całkowitej wyświetli piramidę liczb.");
+            //Console.WriteLine("Program, który po podaniu liczby całkowitej wyświetli piramidę liczb.");
 
             Console.WriteLine("Podaj liczbę całkowitą.");
             int a4 = int.Parse(Console.ReadLine());
 
-            // lewnetrzny loop odpowiada za wiersze 
-            //for (int i = 1; i < a4; i++)
-            //{
-            //     Console.WriteLine(i);
+            //// lewnetrzny loop odpowiada za wiersze 
+            ////for (int i = 1; i < a4; i++)
+            ////{
+            ////     Console.WriteLine(i);
 
-            //    for (int j = 0; j < a4; j++)
-            //    { // liczba znakow w wierszu
-            //        Console.Write(j);
+            ////    for (int j = 0; j < a4; j++)
+            ////    { // liczba znakow w wierszu
+            ////        Console.Write(j);
+            ////    }
+
+
+
+
+            ////}
+
+            //// rys wierszy
+            //for (int i = 0; i < a4; i++)
+            //{
+
+            //    // rys znakow w wierszu
+            //    for (int j = 0; j < i+1; j++)
+            //    {
+            //        //if (i  % 2 == 0)
+            //        //{
+
+            //        //    Console.Write('#');
+            //        //} else
+            //        //{
+            //        //    Console.Write('%');
+            //        //}
+
+            //        Console.Write('*');
+
             //    }
 
-
-
+            //    Console.WriteLine( );
 
             //}
 
-            // rys wierszy
+            //-------------------------
+
             for (int i = 0; i < a4; i++)
             {
-
-                // rys znakow w wierszu
-                for (int j = 0; j < i+1; j++)
+                if (i % 3 == 0)
                 {
-                    //if (i  % 2 == 0)
-                    //{
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write('#');
+                } else if (i % 4 == 0) 
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write('$');
 
-                    //    Console.Write('#');
-                    //} else
-                    //{
-                    //    Console.Write('%');
-                    //}
+                }else
+                {
 
-                    Console.Write('*');
-
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write( '%');
                 }
+                ;
 
-                Console.WriteLine( );
+
+
 
             }
 
 
-            // https://www.youtube.com/watch?v=06ZMRUn5xrU
-            // https://youtu.be/06ZMRUn5xrU
-            // Maszyna liczaca
+
+
+
+
+
+
+
 
 
 
