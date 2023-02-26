@@ -148,14 +148,22 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine("Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru.");
             //1 + 1⁄2 + 1/3 + 1⁄4 itd.
 
-            int a = 0;
+            double result = 1;
+            double a = 1;
             int b = 20;
+            double mianownik = 0;
+
+            //counters6 = 0;
 
             for (int i = 0; i < b; i++)
             {
-
+               // mianownik = i;
+                
+                  result = (1 / i ) ;
+                //double suma = result2 + result; 
             }
 
+            Console.WriteLine($"Wynik dodawania to: {result}");
 
 
 
