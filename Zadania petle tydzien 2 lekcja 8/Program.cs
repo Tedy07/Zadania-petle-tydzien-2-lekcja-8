@@ -144,26 +144,28 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    Console.WriteLine($" Liczba {i} do 3 to {result},");
             //}
 
-            // 6. Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru:.
-            Console.WriteLine("Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru.");
-            //1 + 1⁄2 + 1/3 + 1⁄4 itd.
+            //// 6. Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru:.
+            //Console.WriteLine("Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru: 1 + 1⁄2 + 1/3 + 1⁄4 itd...");
+            
+            //double result;
+            //double result2 = 0;
+            //int n = 20;
 
-            double result = 1;
-            double a = 1;
-            int b = 20;
-            double mianownik = 0;
+            //for (double i = 1; i < n; i++)
+            //{
+            //    result = 1 / i;
+            //    result2 = result2 + result;
+            // }
 
-            //counters6 = 0;
+            Console.WriteLine($"Wynik dodawania kolejnych liczb to: {result2}");
 
-            for (int i = 0; i < b; i++)
-            {
-               // mianownik = i;
-                
-                  result = (1 / i ) ;
-                //double suma = result2 + result; 
-            }
+            // 7. Napisz program, który Napisz program, narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:.
+            Console.WriteLine("Podaj zakres liczb do sprawdzenia");
 
-            Console.WriteLine($"Wynik dodawania to: {result}");
+            Console.WriteLine("Podaj pierwszą liczbę: ");
+            int a2 = int.Parse(Console.ReadLine());
+
+
 
 
 
