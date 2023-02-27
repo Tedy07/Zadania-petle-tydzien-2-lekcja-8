@@ -157,14 +157,21 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    result2 = result2 + result;
             // }
 
-            Console.WriteLine($"Wynik dodawania kolejnych liczb to: {result2}");
+            //Console.WriteLine($"Wynik dodawania kolejnych liczb to: {result2}");
 
             // 7. Napisz program, który Napisz program, narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:.
-            Console.WriteLine("Podaj zakres liczb do sprawdzenia");
+            Console.WriteLine("Program narysuje diament, podaj długość krótszej przekątnej");
+            int a7 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Podaj pierwszą liczbę: ");
-            int a2 = int.Parse(Console.ReadLine());
+            for (int i = 0; i < a7; i++)
+            {
 
+                for (int j = 0; j < a7; j++)
+                {
+
+
+                }
+            }
 
 
 
