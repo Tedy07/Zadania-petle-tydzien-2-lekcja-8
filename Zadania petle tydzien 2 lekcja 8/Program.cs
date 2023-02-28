@@ -163,17 +163,18 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine("Program narysuje diament, podaj długość krótszej przekątnej");
             int a7 = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < a7; i++)
+            for (int i = 0; i < a7; i++)    // odpowiedzialna za linie
             {
-                for (int j = i; j < a7; j++)
+                for (int j = i; j < a7; j++)  // wstawia biały znak, pusty
                 {
                     Console.Write(" ");
                 }
-                for (int k = 0; k < i; k++)
+                for (int k = 0; k < i; k++)     //odpowiedzialny za rysowanie z lewej strony
                 {
                     Console.Write("*");
                 }
-                for (int f = 0; f <= i; f++)
+                for (int f = 0; f <= i; f++)        //odpowiedzialny za rysowaniez prawej strony
+
                 {
                     Console.Write("*");
                 }
