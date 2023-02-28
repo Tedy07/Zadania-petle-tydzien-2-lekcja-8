@@ -198,7 +198,9 @@ namespace Zadania_petle_tydzien_2_lekcja_8
                 Console.WriteLine();
             }
 
-
+            // 8. Napisz program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np. Testowe dane: Abcdefg Rezultat Gfedcba.
+            Console.WriteLine("Program narysuje diament, podaj długość krótszej przekątnej");
+            int a8 = int.Parse(Console.ReadLine());
 
 
 
