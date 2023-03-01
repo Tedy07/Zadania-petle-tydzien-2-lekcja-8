@@ -243,6 +243,15 @@ namespace Zadania_petle_tydzien_2_lekcja_8
                     Console.Write(numberDecimal[j]);
                 }
 
+                // zastanowić się nad takim rozwiązaniem
+                //  for (int i = revBin.Length; i > 0; i--)
+                //{
+                //    Console.Write(revBin[i - 1]);
+                //}
+                //Console.WriteLine(".");
+
+
+
             }
 
            
