@@ -216,31 +216,37 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
             int number = int.Parse(Console.ReadLine());
             int loops = 0;
-            int reszta; 
+            int reszta;
+            string numberDecimal;
 
-            for (int i = 0; 0 < number ; i++)
-            // i - obroty pętli
+            for (int i = 0; 0 < number; i++)
             {
-                Console.WriteLine($"Podałeś {number}");
                 loops++;
 
                 if (number % 2 == 0)
                 {
                     number = number / 2;
                     reszta = 0;
-                    Console.WriteLine($"Obrót pętli nr {loops} wartość {number}, reszty {reszta}");
-
+                    numberDecimal = reszta.ToString();
+                    //Console.Write(numberDecimal);
                 }
-                else // (number % 2 == 1)
+                else
                 {
                     number = number / 2;
                     reszta = 1;
-                    Console.WriteLine($"Obrót pętli nr {loops} wartość {number}, reszty {reszta}");
+                    numberDecimal = reszta.ToString();
+                    //Console.Write(numberDecimal);
+                }
 
-                } 
-
+                for (int j = numberDecimal.Length - 1; j >= 0; j--)
+                {
+                    Console.Write(numberDecimal[j]);
+                }
 
             }
+
+           
+
 
 
 
