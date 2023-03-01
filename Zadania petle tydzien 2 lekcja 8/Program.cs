@@ -212,11 +212,24 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
             // 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
             Console.WriteLine("Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
-            Console.WriteLine("Podaj ciąg znaków ...");
+            Console.WriteLine("Podaj liczbę dzieiętną ...");
 
-            string text = Console.ReadLine();
+            int number = int.Parse(Console.ReadLine());
 
+            for (int i = 0; i <= number; i++)
+                // i - obroty pętli
+            {
+                if (number % 2 == 0)
+                {
+                    Console.WriteLine("koniec");
+                }
+                else
+                {
+                    Console.WriteLine("reszta");
+                }
 
+                Console.WriteLine("koniec");
+            }
 
 
 
