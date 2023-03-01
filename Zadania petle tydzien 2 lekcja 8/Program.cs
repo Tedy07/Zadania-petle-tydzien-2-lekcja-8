@@ -215,20 +215,31 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine("Podaj liczbę dzieiętną ...");
 
             int number = int.Parse(Console.ReadLine());
+            int loops = 0;
+            int reszta; 
 
-            for (int i = 0; i <= number; i++)
-                // i - obroty pętli
+            for (int i = 0; 0 < number ; i++)
+            // i - obroty pętli
             {
+                Console.WriteLine($"Podałeś {number}");
+                loops++;
+
                 if (number % 2 == 0)
                 {
-                    Console.WriteLine("koniec");
-                }
-                else
-                {
-                    Console.WriteLine("reszta");
-                }
+                    number = number / 2;
+                    reszta = 0;
+                    Console.WriteLine($"Obrót pętli nr {loops} wartość {number}, reszty {reszta}");
 
-                Console.WriteLine("koniec");
+                }
+                else // (number % 2 == 1)
+                {
+                    number = number / 2;
+                    reszta = 1;
+                    Console.WriteLine($"Obrót pętli nr {loops} wartość {number}, reszty {reszta}");
+
+                } 
+
+
             }
 
 
