@@ -1,4 +1,5 @@
-﻿using System.Threading.Channels;
+﻿using System.Linq;
+using System.Threading.Channels;
 
 namespace Zadania_petle_tydzien_2_lekcja_8
 {
@@ -159,48 +160,61 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
             //Console.WriteLine($"Wynik dodawania kolejnych liczb to: {result2}");
 
-            // 7. Napisz program, który Napisz program, narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:.
-            Console.WriteLine("Program narysuje diament, podaj długość krótszej przekątnej");
-            int a7 = int.Parse(Console.ReadLine());
+            //// 7. Napisz program, który Napisz program, narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:.
+            //Console.WriteLine("Program narysuje diament, podaj długość krótszej przekątnej");
+            //int a7 = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < a7; i++)    // odpowiedzialna za linie
-            {
-                for (int j = i; j < a7; j++)  // wstawia biały znak, pusty
-                {
-                    Console.Write(" ");
-                }
-                for (int k = 0; k < i; k++)     //odpowiedzialny za rysowanie z lewej strony
-                {
-                    Console.Write("*");
-                }
-                for (int f = 0; f <= i; f++)        //odpowiedzialny za rysowaniez prawej strony
+            //for (int i = 0; i < a7; i++)    // odpowiedzialna za linie
+            //{
+            //    for (int j = i; j < a7; j++)  // wstawia biały znak, pusty
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int k = 0; k < i; k++)     //odpowiedzialny za rysowanie z lewej strony
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    for (int f = 0; f <= i; f++)        //odpowiedzialny za rysowaniez prawej strony
 
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
 
-            for (int i = 0; i <= a7; i++)
-            {
-                for (int j = 0; j < i; j++)
-                {
-                    Console.Write(" ");
-                }
-                for (int k = i; k < a7; k++)
-                {
-                    Console.Write("*");
-                }
-                for (int f = i; f <= a7; f++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+            //for (int i = 0; i <= a7; i++)
+            //{
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int k = i; k < a7; k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    for (int f = i; f <= a7; f++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
 
-            // 8. Napisz program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np. Testowe dane: Abcdefg Rezultat Gfedcba.
-            Console.WriteLine("Program narysuje diament, podaj długość krótszej przekątnej");
-            int a8 = int.Parse(Console.ReadLine());
+            //// 8. Napisz program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np. Testowe dane: Abcdefg Rezultat Gfedcba.
+            //Console.WriteLine("Program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np. Testowe dane: Abcdefg Rezultat Gfedcba.");
+            //Console.WriteLine("Podaj ciąg znaków ...");
+
+            //string text = Console.ReadLine();
+
+            //for (int i = text.Length-1;  i >= 0; i--)
+            //{
+            //    Console.Write(text[i]);
+            //}
+
+            // 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
+            Console.WriteLine("Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
+            Console.WriteLine("Podaj ciąg znaków ...");
+
+            string text = Console.ReadLine();
 
 
 
