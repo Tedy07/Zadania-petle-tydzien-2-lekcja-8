@@ -210,42 +210,45 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    Console.Write(text[i]);
             //}
 
-            // 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
-            Console.WriteLine("Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
-            Console.WriteLine("Podaj liczbę dzieiętną ...");
-
-            int number = int.Parse(Console.ReadLine());
-            int reszta;
-            string numberDecimal = " ";
-
-            for (int i = 0; 0 < number; i++)
-            {
-                if (number % 2 == 0)
-                {
-                    number = number / 2;
-                    reszta = 0;
-                    numberDecimal += reszta.ToString();
-                }
-                else
-                {
-                    number = number / 2;
-                    reszta = 1;
-                    numberDecimal += reszta.ToString();
-                }
-            }
-           
-            Console.WriteLine($"Podana liczba dziesiętna, to w systemie binarnym liczba: ");
-
-            for (int j = numberDecimal.Length - 1; j >= 0; j--)
-            {
-                Console.Write(numberDecimal[j]);
-            }
-            Console.WriteLine(" \n");
-
             //// 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
             //Console.WriteLine("Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
             //Console.WriteLine("Podaj liczbę dzieiętną ...");
 
+            //int number = int.Parse(Console.ReadLine());
+            //int reszta;
+            //string numberDecimal = " ";
+
+            //for (int i = 0; 0 < number; i++)
+            //{
+            //    if (number % 2 == 0)
+            //    {
+            //        number = number / 2;
+            //        reszta = 0;
+            //        numberDecimal += reszta.ToString();
+            //    }
+            //    else
+            //    {
+            //        number = number / 2;
+            //        reszta = 1;
+            //        numberDecimal += reszta.ToString();
+            //    }
+            //}
+
+            //Console.WriteLine($"Podana liczba dziesiętna, to w systemie binarnym liczba: ");
+
+            //for (int j = numberDecimal.Length - 1; j >= 0; j--)
+            //{
+            //    Console.Write(numberDecimal[j]);
+            //}
+            //Console.WriteLine(" \n");
+
+            //// 9. Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb..
+            Console.WriteLine("Program, który znajduje najmniejszą wspólną wielokrotność dla zadanych 2 liczb..");
+            Console.WriteLine("Podaj pierwszą liczbę ...");
+            int number1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj drugą liczbę ...");
+            int number2 = int.Parse(Console.ReadLine());
 
 
 
@@ -260,7 +263,6 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
 
 
-                
         }
     }
 }
