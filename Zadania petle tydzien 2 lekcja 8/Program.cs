@@ -233,12 +233,14 @@ namespace Zadania_petle_tydzien_2_lekcja_8
                     numberDecimal += reszta.ToString();
                 }
             }
-            Console.WriteLine(numberDecimal);
+           
+            Console.WriteLine($"Podana liczba dziesiętna, to w systemie binarnym liczba: ");
 
             for (int j = numberDecimal.Length - 1; j >= 0; j--)
             {
                 Console.Write(numberDecimal[j]);
             }
+            Console.WriteLine(" \n");
 
             //// 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
             //Console.WriteLine("Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
@@ -258,16 +260,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
 
 
 
-            // zastanowić się nad takim rozwiązaniem
-            //  for (int i = revBin.Length; i > 0; i--)
-            //{
-            //    Console.Write(revBin[i - 1]);
-            //}
-            //Console.WriteLine(".");
-
-
-
-
+                
         }
     }
 }
