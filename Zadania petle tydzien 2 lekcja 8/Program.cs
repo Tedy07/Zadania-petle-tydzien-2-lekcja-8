@@ -215,51 +215,55 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine("Podaj liczbę dzieiętną ...");
 
             int number = int.Parse(Console.ReadLine());
-            int loops = 0;
             int reszta;
-            string numberDecimal;
+            string numberDecimal = " ";
 
             for (int i = 0; 0 < number; i++)
             {
-                loops++;
-
                 if (number % 2 == 0)
                 {
                     number = number / 2;
                     reszta = 0;
-                    numberDecimal = reszta.ToString();
-                    //Console.Write(numberDecimal);
+                    numberDecimal += reszta.ToString();
                 }
                 else
                 {
                     number = number / 2;
                     reszta = 1;
-                    numberDecimal = reszta.ToString();
-                    //Console.Write(numberDecimal);
+                    numberDecimal += reszta.ToString();
                 }
+            }
+            Console.WriteLine(numberDecimal);
 
-                for (int j = numberDecimal.Length - 1; j >= 0; j--)
-                {
-                    Console.Write(numberDecimal[j]);
-                }
-
-                // zastanowić się nad takim rozwiązaniem
-                //  for (int i = revBin.Length; i > 0; i--)
-                //{
-                //    Console.Write(revBin[i - 1]);
-                //}
-                //Console.WriteLine(".");
-
-
-
+            for (int j = numberDecimal.Length - 1; j >= 0; j--)
+            {
+                Console.Write(numberDecimal[j]);
             }
 
-           
+            //// 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
+            //Console.WriteLine("Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
+            //Console.WriteLine("Podaj liczbę dzieiętną ...");
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+            // zastanowić się nad takim rozwiązaniem
+            //  for (int i = revBin.Length; i > 0; i--)
+            //{
+            //    Console.Write(revBin[i - 1]);
+            //}
+            //Console.WriteLine(".");
 
 
 
