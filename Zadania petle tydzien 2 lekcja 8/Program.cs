@@ -251,6 +251,23 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             int number2 = int.Parse(Console.ReadLine());
 
 
+            int multi = number1 * number2;
+                
+            while (number1 != number2)
+            {
+                if (number1 > number2)
+                {
+                    number1 -= number2;
+
+                } else
+                {
+                    number2 -= number1;
+                }
+
+            }
+
+            Console.WriteLine($"Najmniejszą wspólną wielokrotnością jest: {multi / number1}");
+
 
 
 
