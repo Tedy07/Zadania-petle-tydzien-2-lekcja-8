@@ -8,7 +8,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
         static void Main(string[] args)
         {
             // 1. Zadanie - liczby pierwsze w zakresie od 0 do 100
-            Console.WriteLine("Zadanie liczby pierwsze w zakresie od 0 do 100.");
+            Console.WriteLine("1. Zadanie liczby pierwsze w zakresie od 0 do 100.");
             Console.WriteLine("Podaj zakres liczb do sprawdzenia");
 
             Console.WriteLine("Podaj pierwszą liczbę: ");
@@ -17,19 +17,20 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             int i2 = int.Parse(Console.ReadLine());
 
             int counters = 0;
+            int liczba1;
 
             for (int i = i1; i <= i2; i++)
             {
-                int liczba = i;
+                liczba1 = i;
 
-                if (CzyPierwsza(liczba))
+                if (CzyPierwsza(liczba1))
                 {
-                    Console.WriteLine($"* {liczba} jest liczbą pierwszą");
+                    Console.WriteLine($"* {liczba1} jest liczbą pierwszą");
                     counters++;
                 }
                 else
                 {
-                    Console.WriteLine($"{liczba} NIE jest liczbą pierwszą");
+                    Console.WriteLine($"{liczba1 } NIE jest liczbą pierwszą");
                 }
             }
             Console.WriteLine($"W podanym przedziale od {i1} do {i2} liczb pierwszych jest: {counters}");
@@ -56,7 +57,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             // 2. Za pomocą pętli do…while znajdziesz wszystkie liczby parzyste z zakresu 0 – 1000
-            Console.WriteLine("Znajdowanie wszystkich liczb parzystych w podanym zakresie.");
+            Console.WriteLine("\n2a. Znajdowanie wszystkich liczb parzystych w podanym zakresie.");
             Console.WriteLine("Podaj zakres liczb do sprawdzenia");
 
             Console.WriteLine("Podaj pierwszą liczbę: ");
@@ -82,7 +83,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine($"W podanym zakresie liczb parzystych jest: {counters2}.");
 
             //dodatkowo zadanie 2 w pętli for 
-            Console.WriteLine("\nDodatkowe zadanie 2 w pętli for ");
+            Console.WriteLine("\n2b. Dodatkowe zadanie 2 w pętli for ");
             Console.WriteLine("Znajdowanie wszystkich liczb parzystych w podanym zakresie.\n");
 
             int counters2a = 0;
@@ -102,7 +103,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine($"W podanym zakresie liczb parzystych jest {counters2a}.");
 
             // 3. Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
-            Console.WriteLine("\nWyświetlić ciąg Fibonacciego?");
+            Console.WriteLine("\n3. Wyświetlić ciąg Fibonacciego?");
             Console.ReadKey();
 
             int a = 0;
@@ -121,7 +122,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             // 4. Program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej.
-            Console.WriteLine("Program, który po podaniu liczby całkowitej wyświetli piramidę liczb.");
+            Console.WriteLine("\n4. Program, który po podaniu liczby całkowitej wyświetli piramidę liczb.");
 
             Console.WriteLine("Podaj liczbę całkowitą.");
             int a4 = int.Parse(Console.ReadLine());
@@ -138,7 +139,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             // 5. Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
-            Console.WriteLine("Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.");
+            Console.WriteLine("\n5. Program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.");
 
             for (int i = 1; i <= 20; i++)
             {
@@ -147,7 +148,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             // 6. Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru:.
-            Console.WriteLine("Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru: 1 + 1⁄2 + 1/3 + 1⁄4 itd...");
+            Console.WriteLine("\n6. Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru: 1 + 1⁄2 + 1/3 + 1⁄4 itd...");
 
             double result;
             double result2 = 0;
@@ -162,7 +163,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             Console.WriteLine($"Wynik dodawania kolejnych liczb to: {result2}");
 
             // 7. Napisz program, który Napisz program, narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:.
-            Console.WriteLine("Program narysuje diament, podaj długość krótszej przekątnej");
+            Console.WriteLine("\n7. Program narysuje diament, podaj długość krótszej przekątnej");
             int a7 = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < a7; i++)    // odpowiedzialna za linie
@@ -200,7 +201,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             // 8. Napisz program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np. Testowe dane: Abcdefg Rezultat Gfedcba.
-            Console.WriteLine("Program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np. Testowe dane: Abcdefg Rezultat Gfedcba.");
+            Console.WriteLine("\n8. Program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np. Testowe dane: Abcdefg Rezultat Gfedcba.");
             Console.WriteLine("Podaj ciąg znaków ...");
 
             string text = Console.ReadLine();
@@ -211,7 +212,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             // 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
-            Console.WriteLine("Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
+            Console.WriteLine("\n9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
             Console.WriteLine("Podaj liczbę dzieiętną ...");
 
             int number = int.Parse(Console.ReadLine());
@@ -240,10 +241,9 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             {
                 Console.Write(numberDecimal[j]);
             }
-            Console.WriteLine(" \n");
-
-            // 9. Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb..
-            Console.WriteLine("Program, który znajduje najmniejszą wspólną wielokrotność dla zadanych 2 liczb..");
+            
+            // 10. Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb..
+            Console.WriteLine("\n10. Program, który znajduje najmniejszą wspólną wielokrotność dla zadanych 2 liczb..");
             Console.WriteLine("Podaj pierwszą liczbę ...");
             int number1 = int.Parse(Console.ReadLine());
 
