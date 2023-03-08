@@ -145,21 +145,21 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    Console.WriteLine($" Liczba {i} do 3 to {result5},");
             //}
 
-            // 6. Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru:.
-            Console.WriteLine("\n6. Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru: 1 + 1⁄2 + 1/3 + 1⁄4 itd...");
+            //// 6. Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru:.
+            //Console.WriteLine("\n6. Program, który dla liczb od 0 do 20 obliczy sumę wg wzoru: 1 + 1⁄2 + 1/3 + 1⁄4 itd...");
 
-            double result;
-            double result2 = 0;
-            double number3 = 1;
-            int n = 20;
+            //double result;
+            //double result2 = 0;
+            //double number3 = 1;
+            //int n = 20;
 
-            for (double i = 1; i < n; i++)
-            {
-                result = number3 / i;
-                result2 = result2 + result;
-            }
+            //for (double i = 1; i < n; i++)
+            //{
+            //    result = number3 / i;
+            //    result2 = result2 + result;
+            //}
 
-            Console.WriteLine($"Wynik dodawania kolejnych liczb to: {result2}");
+            //Console.WriteLine($"Wynik dodawania kolejnych liczb to: {result2}");
 
             //// 7. Napisz program, który Napisz program, narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:.
             //Console.WriteLine("\n7. Program narysuje diament, podaj długość krótszej przekątnej");
@@ -210,36 +210,41 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             //    Console.Write(text[i]);
             //}
 
-            //// 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
-            //Console.WriteLine("\n9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
-            //Console.WriteLine("Podaj liczbę dzieiętną ...");
+            // 9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
+            Console.WriteLine("\n9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
+            Console.WriteLine("Podaj liczbę dzieiętną ...");
 
-            //int number = int.Parse(Console.ReadLine());
-            //int reszta;
-            //string numberDecimal = " ";
+            int number = int.Parse(Console.ReadLine());
+            int reszta;
+            string numberDecimal = " ";
 
-            //for (int i = 0; 0 < number; i++)
-            //{
-            //    if (number % 2 == 0)
-            //    {
-            //        number = number / 2;
-            //        reszta = 0;
-            //        numberDecimal += reszta.ToString();
-            //    }
-            //    else
-            //    {
-            //        number = number / 2;
-            //        reszta = 1;
-            //        numberDecimal += reszta.ToString();
-            //    }
-            //}
+            for (int i = 0; 0 < number; i++)
+            {
+                number = number / 2;
+                reszta = 1;
+                numberDecimal += reszta.ToString();
 
-            //Console.WriteLine($"Podana liczba dziesiętna, to w systemie binarnym liczba: ");
 
-            //for (int j = numberDecimal.Length - 1; j >= 0; j--)
-            //{
-            //    Console.Write(numberDecimal[j]);
-            //}
+                //if (number % 2 == 0)
+                //{
+                //    number = number / 2;
+                //    reszta = 0;
+                //    numberDecimal += reszta.ToString();
+                //}
+                //else
+                //{
+                //    number = number / 2;
+                //    reszta = 1;
+                //    numberDecimal += reszta.ToString();
+                //}
+            }
+
+            Console.WriteLine($"Podana liczba dziesiętna, to w systemie binarnym liczba: ");
+
+            for (int j = numberDecimal.Length - 1; j >= 0; j--)
+            {
+                Console.Write(numberDecimal[j]);
+            }
 
             //// 10. Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb..
             //Console.WriteLine("\n10. Program, który znajduje najmniejszą wspólną wielokrotność dla zadanych 2 liczb..");
