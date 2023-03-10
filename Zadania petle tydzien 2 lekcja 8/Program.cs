@@ -208,7 +208,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             //9.Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.
-           Console.WriteLine("\n9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
+           Console.WriteLine("\n\n9. Napisz program, który zamieni liczbę dziesiętną na liczbę binarną.");
             Console.WriteLine("Podaj liczbę dzieiętną ...");
 
             int number = int.Parse(Console.ReadLine());
@@ -226,7 +226,7 @@ namespace Zadania_petle_tydzien_2_lekcja_8
             }
 
             // 10. Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb..
-            Console.WriteLine("\n10. Program, który znajduje najmniejszą wspólną wielokrotność dla zadanych 2 liczb..");
+            Console.WriteLine("\n\n10. Program, który znajduje najmniejszą wspólną wielokrotność dla zadanych 2 liczb..");
             Console.WriteLine("Podaj pierwszą liczbę ...");
             int number1 = int.Parse(Console.ReadLine());
 
